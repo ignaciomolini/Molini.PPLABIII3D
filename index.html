@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" href="./image/coche.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/main.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <title>Parcial 1</title>
+  </head>
+  <body>
+    <header>
+      <a href=""><img src="./image/logo.svg" alt="logo" id="img-logo" /></a>
+      <nav class="nav-header">
+        <a href="">Nosotros</a> 
+        <a href="">Anuncios</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Administracion</h1>
+      <img src="./image/banner.jpeg" alt="banner" id="img-banner" />
+    </div>
+
+    <main class="container">
+      <form>
+        <fieldset>
+          <legend>Informacion Del Anuncio</legend>
+          <input type="hidden" name="id" />
+          <div class="form-container">
+            <div>
+              <label for="txtTitulo"> Titulo:</label>
+              <input type="text" id="txtTitulo" name="titulo" placeholder="Titulo..." required />
+            </div>
+            <div>
+              <div class="radio-container">
+                <label> Transaccion: </label>
+                <div>
+                  <label for="rdoV">Venta</label>
+                  <input
+                    type="radio"
+                    name="transaccion"
+                    id="rdoV"
+                    value="Venta"
+                    checked
+                  />
+                </div>
+                <div>
+                  <label for="rdoA">Alquiler</label>
+                  <input
+                    type="radio"
+                    name="transaccion"
+                    id="rdoA"
+                    value="Alquiler"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="txtDescripcion">Descripcion:</label>
+              <input
+                type="text"
+                id="txtDescripcion"
+                name="descripcion"
+                placeholder="Descripcion..."
+                required
+              />
+            </div>
+            <div>
+              <label for="numberPrecio"> Precio:</label>
+              <input type="number" id="numberPrecio" name="precio" placeholder="Precio..." required />
+            </div>
+            <div>
+              <div class="caract-icon">
+              <div>
+                <img class="icon" src="./image/puerta.svg" alt="puertas" />
+                <input
+                  type="number"
+                  id="numberPuertas"
+                  name="puertas"
+                  placeholder="Puertas..."
+                  required
+                />
+              </div>
+              <div>
+                <img class="icon" src="./image/velocimetro.svg" alt="kms" />
+                <input type="number" id="numberKms" name="kms" placeholder="Kilometros..." required />
+              </div>
+              <div>
+                <img class="icon" src="./image/potencia.svg" alt="puertas" />
+                <input
+                  type="number"
+                  id="numberPotencia"
+                  name="potencia"
+                  placeholder="Potencia..."
+                  required
+                />
+              </div>
+            </div>
+            </div>
+            
+
+            <div class="btn-form">
+              <button id="btnAlta">
+                <i class="fa fa-floppy-o" aria-hidden="true"></i>Guardar
+              </button>
+              <button id="btnBaja" class="ocultar">Eliminar</button>
+              <button id="btnMod" class="ocultar">Modificar</button>
+              <button id="btnCancel">Cancelar</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <div class="container">
+      <div id="divSpinner"></div>
+      <div id="divTabla" class="tabla"></div>
+    </div>
+
+    <footer>
+      <nav class="nav-footer">
+        <a href="">Nosotros</a>
+        <a href="">Anuncios</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+      <p>Todos los derechos reservados &copy</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(83, 129, 190);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-weight: bold;
+  color: white;
+  padding-right: 100px;
+}
+
+footer{
+  height: 120px;;
+}
+
+.nav-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.nav-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-star;
+  padding-left: 100px;
+}
+
+.icon{
+  width: 40px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(114, 174, 231);
+  border-radius: 3px;
+  padding: 6px 8px;
+  text-transform: uppercase;
+  margin: 1em;
+}
+
+nav a:hover {
+  background-color: rgba(13, 159, 243, 0.4);
+  transition: background-color 0.5s;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 85px 25px 0px;
+}
+
+th,
+td {
+  border: 2px solid black;
+  padding: 6px;
+}
+
+td {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+}
+
+thead tr {
+  background-color: rgba(109, 160, 255, 0.7);
+}
+
+thead th {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 12px;
+}
+
+tbody tr:hover {
+  background-color: rgba(68, 149, 243, 0.5);
+  transition: background-color 0.5s;
+}
+
+fieldset {
+  margin-top: 20px;
+  border-radius: 15px;
+  font-weight: 500;
+  border-color: rgb(103, 105, 240);
+}
+
+form {
+  width: 550px;
+  margin-right: 140px;
+}
+
+.form-container > div > input {
+  width: 600px;
+  padding: 8px;
+  margin-left: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.form-container {
+  padding: 10px;
+}
+
+.form-container > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-container div label {
+  padding: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+  margin-right: 5px;
+}
+
+.radio-container input{
+  margin-left: -10px;
+}
+
+.caract-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.caract-icon > div > input {
+  width: 175px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.btn-form button {
+  padding: 8px 35px 8px 35px;
+  margin: 15px 10px 5px 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-form button i {
+  padding-right: 5px;
+  color: black;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ocultar {
+  display: none;
+}
+
+#divSpinner{
+  padding: 30px;
+}
+
+#btnAlta:hover {
+  background-color: rgba(75, 206, 75, 0.6);
+  transition: background-color 0.3s;
+}
+
+#btnMod:hover {
+  background-color: rgba(227, 240, 54, 0.6);
+  transition: background-color 0.3s;
+}
+
+#btnBaja:hover {
+  background-color: rgba(204, 37, 32, 0.6);
+  transition: background-color 0.3s;
+}
+
+#btnCancel:hover {
+  background-color: rgba(204, 37, 32, 0.6);
+  transition: background-color 0.3s;
+}
+
+#img-logo {
+  width: 8em;
+  padding: 30px 0px 30px 100px;
+}
+
+#img-banner {
+  opacity:0.8;
+  height: 18em;
+  width: 120em;
+}
